@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cyberpunk Dashboard</title>
+        <meta name="description" content="Sicherheitssystem Dashboard">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Custom Cyberpunk CSS -->
+        <link rel="stylesheet" href="/static/css/cyberpunk.css">
+        <style>
+            body {
+                min-height: 100vh;
+                overflow-y: auto;
+            }
+            .dashboard-card {
+                margin-bottom: 2rem;
+            }
+            .cyber-card {
+                height: 100%;
+                min-height: 250px;
+            }
+            .hero {
+                position: relative;
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            }
+            .hero-content {
+                padding-top: 100px;
+            }
+            .vision-text {
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top cyber-navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <a class="navbar-brand neon-text">CYBER-SEC</a>
+                    <button class="btn-neon">LOGOUT</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero min-vh-100">
+            <div class="grid-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="vision-text">
+                        <div class="row g-4">
+                            <!-- Systemstatus -->
+                            <div class="col-lg-6 col-md-6 dashboard-card">
+                                <div class="cyber-card">
+                                    <h2 class="neon-text mb-4">SYSTEM STATUS</h2>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="status-indicator">
+                                                <div class="status-dot"></div>
+                                                <span class="status-text">Firewall Aktiv</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="status-indicator">
+                                                <div class="status-dot"></div>
+                                                <span class="status-text">Datenbank Online</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="status-indicator">
+                                                <div class="status-dot"></div>
+                                                <span class="status-text">Netzwerk Geschützt</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="status-indicator">
+                                                <div class="status-dot"></div>
+                                                <span class="status-text">System Optimal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Benutzerinfo -->
+                            <div class="col-lg-6 col-md-6 dashboard-card">
+                                <div class="cyber-card">
+                                    <h3 class="neon-text-pink mb-4">BENUTZER PROFIL</h3>
+                                    <ul class="aligned-list">
+                                        <li>Benutzername: <span class="neon-text">ADMIN</span></li>
+                                        <li>Rolle: <span class="neon-text">SYSTEM ADMINISTRATOR</span></li>
+                                        <li>Letzte Anmeldung: <span class="neon-text">28.01.2025 14:53</span></li>
+                                        <li>Status: <span class="neon-text">AKTIV</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Systeminfos -->
+                            <div class="col-lg-6 col-md-6 dashboard-card">
+                                <div class="cyber-card">
+                                    <h3 class="neon-text-pink mb-4">SYSTEM INFO</h3>
+                                    <ul class="aligned-list">
+                                        <li>Server: <span class="neon-text">PYTHON-HTTP/1.0</span></li>
+                                        <li>Datenbank: <span class="neon-text">SQLITE3</span></li>
+                                        <li>Version: <span class="neon-text">1.0.0</span></li>
+                                        <li>Uptime: <span class="neon-text">24:00:00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Aktivitätslog -->
+                            <div class="col-12 col-md-6 dashboard-card">
+                                <div class="cyber-card">
+                                    <h3 class="neon-text-pink mb-4">SYSTEM LOG</h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-dark table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ZEITSTEMPEL</th>
+                                                    <th scope="col">EREIGNIS</th>
+                                                    <th scope="col">STATUS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>28.01.2025 14:53</td>
+                                                    <td>System Start</td>
+                                                    <td><span class="neon-text">OK</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28.01.2025 14:53</td>
+                                                    <td>Datenbank Initialisierung</td>
+                                                    <td><span class="neon-text">OK</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28.01.2025 14:53</td>
+                                                    <td>User Login</td>
+                                                    <td><span class="neon-text">OK</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Bundle mit Popper -->
+        <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom Dashboard JavaScript -->
+        <script>
+            // Aktualisiere die Zeitanzeige
+            function updateTime() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('de-DE');
+                document.querySelectorAll('.status-text').forEach(el => {
+                    if (el.textContent.includes('System Optimal')) {
+                        el.textContent = `System Optimal (${timeString})`;
+                    }
+                });
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+    </body>
+</html>

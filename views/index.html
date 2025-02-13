@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cyber Login System</title>
+        <meta name="description" content="Futuristisches Login-System im Cyberpunk-Stil">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Custom Cyberpunk CSS -->
+        <link rel="stylesheet" href="/static/css/cyberpunk.css">
+    </head>
+    <body>
+        <!-- Hero Section -->
+        <section class="hero min-vh-100">
+            <div class="grid-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="neon-text display-4 mb-4">CYBER LOGIN SYSTEM</h1>
+                    <div class="vision-text">
+                        <h2 class="neon-text-pink h4 mb-4">Welcome To The VOID</h2>
+                        <p>Betreten Sie die digitale Zukunft mit unserem hochsicheren Login-System.</p>
+                        
+                        <!-- Status Indicator -->
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span class="status-text">System Online</span>
+                        </div>
+
+                        <!-- Login Card -->
+                        <div class="cyber-card">
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="username">USERNAME</label>
+                                    <input type="text" id="username" name="username" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn-neon w-100 mt-4">ENTER THE VOID</button>
+                                <button type="button" class="btn-neon w-100 mt-4" onclick="location.href='/register'">REGISTRIEREN</button>
+                            </form>
+                        </div>
+
+                        <!-- Quick Info -->
+                        <div style="margin-top: 50px;">
+                            <h2 class="neon-text-pink h4 text-center">
+                                <span class="neon-text-pink">⚠</span> 
+                                Authorisierter Zugang erforderlich
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Bundle mit Popper -->
+        <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
